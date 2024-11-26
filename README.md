@@ -45,17 +45,17 @@ Through Linux, DevOps engineers can configure server, host, or deploy containeri
 
 Monitoring ensures the health and performance of Linux servers. Common tools include:
 
-**top, htop:** View real-time resource usage.
+- **top, htop:** View real-time resource usage.
 
-**vmstat, iostat:** Monitor CPU and I/O statistics.
+- **vmstat, iostat:** Monitor CPU and I/O statistics.
 
-**sar:** Collect, report, and save system activity.
+- **sar:** Collect, report, and save system activity.
 
-**nmon:** Visualize system metrics like CPU, memory, and network usage.
+- **nmon:** Visualize system metrics like CPU, memory, and network usage.
 
 ### II) User and Group Management:
 Managing user accounts and permissions is vital to secure multi-user systems.
-- **Commands:**
+**Commands:**
 - **useradd, usermod, passwd:** Manage users.
   
 - **groupadd, gpasswd:** Manage groups.
