@@ -112,19 +112,19 @@ Manage active processes and services for system stability.
 - **Tip:** Automate service monitoring with tools like Monit or Nagios.
 
 ## iii. Advanced Administration Tasks:
-### Shell Scripting for Automation
+### 1) Shell Scripting for Automation:
 Automation reduces manual effort and ensures consistency.
 - Write reusable scripts for tasks like backups, log rotations, or updates.
 - Use tools like cron or at to schedule scripts.
 
-### Security Hardening
+### 2) Security Hardening:
 Ensure system security by:
 - Implementing firewalls and SELinux/AppArmor.
 - Regularly applying patches and updates.
 - Enforcing SSH key-based authentication.
 - Monitoring login attempts using fail2ban.
 
-### Backup and Restore
+### 3) Backup and Restore:
 Plan robust backup strategies to prevent data loss.
 
 - **Tools:**
@@ -132,12 +132,12 @@ Plan robust backup strategies to prevent data loss.
     - **tar, gzip:** File-based backups.
     - Automate periodic backups and test restore processes.
 
-### Log Management
+### 4) Log Management:
 Logs help diagnose and audit system activities.
 - Use tools like **Logrotate** to manage log file sizes.
 - Centralize logs with **ELK Stack (Elasticsearch, Logstash, Kibana)**.
 
-### Kernel Tuning and Performance Optimization
+### 5) Kernel Tuning and Performance Optimization:
 Optimize the kernel for specific workloads:
 - Adjust kernel parameters with **sysctl**.
 - Analyze system bottlenecks with **perf**, **dstat**, or **iotop**.
