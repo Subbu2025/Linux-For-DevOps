@@ -1,58 +1,27 @@
 # Linux Administration Tasks for a DevOps Engineer
 #### Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.
 ---
-## Table of Contents
-- 1. [Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
-
-- 2. [Core Linux Administration Tasks](#core-linux-administration)
-
-    - [System Monitoring](#system-monitoring)
-
-    - [User and Group Management](#user-and-group-management)
-
-    - [Package Management](#package-management)
-
-    - [File and Directory Management](#file-and-directory-management)
-
-    - [Disk and Storage Management](#disk-and-storage)
-
-    - [Networking Configuration](#network-configuration)
-
-  - [Process and Service Management](#process-and-service-management)
-
-- 3. [Advanced Administration Tasks](#advanced-administration-tasks)
-
-    - [Shell Scripting for Automation](#shell-scripting-for-automation)
-
-    - [Security Hardening](#security-hardening)
-
-    - [Backup and Restore](#backup-and-restore)
-
-    - [Log Management](#log-management)
-
-    - [Kernel Tuning and Performance Optimization](#kernel-tuning-and-performance-optimization)
-
-- 4. [Practical Real-World Scenarios](#practical-real-world-scenarios)
 
 ## Table of Contents
 
 - [i. Introduction to Linux Administration in DevOps](#i-introduction-to-linux-administration-in-devops)
 - [ii. Core Linux Administration Tasks](#ii-core-linux-administration-tasks)
-  - [System Monitoring](#system-monitoring)
-  - [User and Group Management](#user-and-group-management)
-  - [Package Management](#package-management)
-  - [File and Directory Management](#file-and-directory-management)
-  - [Disk and Storage Management](#disk-and-storage-management)
-  - [Networking Configuration](#networking-configuration)
-  - [Process and Service Management](#process-and-service-management)
-- [iii. Advanced Administration Tasks](#iii-advanced-administration-tasks)
-  - [Shell Scripting for Automation](#shell-scripting-for-automation)
-  - [Security Hardening](#security-hardening)
-  - [Backup and Restore](#backup-and-restore)
-  - [Log Management](#log-management)
-  - [Kernel Tuning and Performance Optimization](#kernel-tuning-and-performance-optimization)
-- [iv. Practical Real-World Scenarios](#iv-practical-real-world-scenarios)
+    - [1) System Monitoring](#1-system-monitoring)
+    - [2) User and Group Management](#2-user-and-group-management)
+    - [3) Package Management](#3-package-management)
+    - [4) File and Directory Management](#4-file-and-directory-management)
+    - [5) Disk and Storage Management](#5-disk-and-storage-management)
+    - [6) Networking Configuration](#6-networking-configuration)
+    - [7) Process and Service Management](#7-process-and-service-management)
 
+- [iii. Advanced Administration Tasks](#iii-advanced-administration-tasks)
+    - [1) Shell Scripting for Automation](#1-shell-scripting-for-automation)
+    - [2) Security Hardening](#2-security-hardening)
+    - [3) Backup and Restore](#3-backup-and-restore)
+    - [4) Log Management](#4-log-management)
+    - [5) Kernel Tuning and Performance Optimization](#5-kernel-tuning-and-performance-optimization)
+
+- [iv. Practical Real-World Scenarios](#iv-practical-real-world-scenarios)
 
   
 ---
