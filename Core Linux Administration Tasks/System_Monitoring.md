@@ -38,6 +38,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   pidstat -p <PID>
   ```
    Replace <PID> with the process ID of Jenkins or Docker to see CPU and memory usage.
+  
   **Note:**
   The pidstat command is included in the sysstat package, which might not come pre-installed on your EC2 instance.
   You can install it by following these steps:
@@ -46,4 +47,4 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   sudo yum install sysstat -y
   ```
-  
+   ![pidstat-example](./images/pidstat.png)
