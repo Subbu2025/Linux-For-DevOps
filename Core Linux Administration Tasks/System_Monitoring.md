@@ -90,18 +90,24 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ![iostat-example](./images/iostat.png)
 
 **How to Use iostat for Docker/EKS Applications?**
+
   **Practical Example for Docker:**
+  
   **Scenario:** A container running a MySQL database is slow.
+  
   **1. Run iostat:**
   ```bash
   iostat -dx 1
   ```
   - If %util is consistently above 90% or w_await is high, the disk is overloaded or slow.
+  - 
   **2. Identify the container causing high disk usage:**
+    
   ```bash
   docker stats
   ```
   - Look for the MySQL container's IO metrics.
+
   **3. Solution:**
   - Move the database files to a faster storage backend (e.g., AWS EBS gp3 or io2 volumes).
   - Optimize database queries or reduce IOPS requirements.
@@ -109,7 +115,10 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
  **Check Kubernetes Storage Usage:**
 
   For EKS, check the Kubernetes storage backends:
+  
     - If the application is using AWS EBS volumes, monitor the attached volume's performance:
+    
         - Use AWS CloudWatch Metrics (e.g., VolumeReadOps, VolumeWriteOps) to monitor EBS volume usage.
+        
         - Alternatively, on the EKS node, use iostat to check the performance of the /dev/xvda or /dev/nvme* devices.
 
