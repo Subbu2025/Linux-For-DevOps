@@ -67,3 +67,22 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **Output Example:**
 
   ![vmstat-example](./images/vmstat.png)
+
+  - r: Number of processes waiting to run (high r = CPU bottleneck).
+  - wa: High values indicate I/O bottlenecks (e.g., slow disk or network)
+- To detect high I/O wait during Jenkins builds, execute vmstat while a Jenkins job is running. If the 'wa' value is elevated, look into the performance of the disk or the activity of Docker containers.
+
+  - **1.6) iostat (Input/Output Statistics):**
+    - **Purpose:** This tool provides insights into CPU usage and the I/O performance of storage devices and partitions.
+        - **Key Metrics:**
+          - **CPU:** %user, %system, %iowait, %idle.
+          - **Disk I/O:** tps (transactions/sec), kB_read/s, kB_wrtn/s
+
+  **Example Use Cases:**
+  - **Monitor disk I/O in real time (update every second):**
+  ```bash
+  iostat -dx 1
+  ```
+   **Output Example:**
+
+  ![iostat-example](./images/iostat.png)
