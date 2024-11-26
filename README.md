@@ -34,6 +34,26 @@
 
 - 4. [Practical Real-World Scenarios](#practical-real-world-scenarios)
 
+## Table of Contents
+
+- [i. Introduction to Linux Administration in DevOps](#i-introduction-to-linux-administration-in-devops)
+- [ii. Core Linux Administration Tasks](#ii-core-linux-administration-tasks)
+  - [System Monitoring](#system-monitoring)
+  - [User and Group Management](#user-and-group-management)
+  - [Package Management](#package-management)
+  - [File and Directory Management](#file-and-directory-management)
+  - [Disk and Storage Management](#disk-and-storage-management)
+  - [Networking Configuration](#networking-configuration)
+  - [Process and Service Management](#process-and-service-management)
+- [iii. Advanced Administration Tasks](#iii-advanced-administration-tasks)
+  - [Shell Scripting for Automation](#shell-scripting-for-automation)
+  - [Security Hardening](#security-hardening)
+  - [Backup and Restore](#backup-and-restore)
+  - [Log Management](#log-management)
+  - [Kernel Tuning and Performance Optimization](#kernel-tuning-and-performance-optimization)
+- [iv. Practical Real-World Scenarios](#iv-practical-real-world-scenarios)
+
+
   
 ---
 ## i. Introduction to Linux Administration in DevOps
