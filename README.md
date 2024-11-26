@@ -1,5 +1,5 @@
 # Linux Administration Tasks for a DevOps Engineer
-**Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.**
+Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.
 ---
 ## Table of Contents
 - 1. [Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
@@ -34,14 +34,13 @@
 
 - 4. [Practical Real-World Scenarios](#practical-real-world-scenarios)
 
-- 5. [Flowchart Summary and Tips for Interviews](#flowchart-summary-and-tips-for-interviews)
   
 ---
-## 1. Introduction to Linux Administration in DevOps
+## i. Introduction to Linux Administration in DevOps
 Linux Administration in the DevOps is mainly related to the management and automation of the Linux system to support applications for deployment, scalability, and reliability. 
 Through Linux, DevOps engineers can configure server, host, or deploy containerized applications with system stability support, making it crucial.
-## 2. Core Linux Administration Tasks
-### I) System Monitoring:
+## ii. Core Linux Administration Tasks
+### 1) System Monitoring:
 
 Monitoring ensures the health and performance of Linux servers. Common tools include:
 
@@ -53,7 +52,7 @@ Monitoring ensures the health and performance of Linux servers. Common tools inc
 
 - **nmon:** Visualize system metrics like CPU, memory, and network usage.
 
-### II) User and Group Management:
+### 2) User and Group Management:
 Managing user accounts and permissions is vital to secure multi-user systems.
 
 **Commands:**
@@ -67,7 +66,7 @@ Managing user accounts and permissions is vital to secure multi-user systems.
 - Use least-privilege principles.
 - Employ sudo for controlled administrative access.
 
-### III) Package Management:
+### 3) Package Management:
   
 Linux distributions rely on package managers to install, update, and remove software.
 
@@ -78,7 +77,7 @@ Linux distributions rely on package managers to install, update, and remove soft
     - Commands: **yum, dnf, rpm**
 - Use automation tools like Ansible or Chef for large-scale package management.
   
- ### IV) File and Directory Management:
+ ### 4) File and Directory Management:
  
 Efficient file management ensures organized and secure systems.
 
@@ -94,7 +93,7 @@ Efficient file management ensures organized and secure systems.
 
 - **Pro Tip:** Use rsync for efficient backup and file transfer.
   
-### IV) Disk and Storage Management:
+### 5) Disk and Storage Management:
 Disk management ensures proper utilization and storage capacity.
 
 - **Commands:**
@@ -104,7 +103,7 @@ Disk management ensures proper utilization and storage capacity.
       
 - Implement LVM (Logical Volume Management) for flexible storage.
 
-### IV) Networking Configuration:
+### 6) Networking Configuration:
 
 Linux servers often act as network nodes, requiring proper setup and monitoring.
 
@@ -115,7 +114,7 @@ Linux servers often act as network nodes, requiring proper setup and monitoring.
 - **Tools:**
     - **tcpdump, nmap:** Network debugging and scanning.
     - **ping, traceroute:** Diagnose network issues.
-### VI) Process and Service Management:
+### 7) Process and Service Management:
 Manage active processes and services for system stability.
 
 - **Commands:**
@@ -123,7 +122,7 @@ Manage active processes and services for system stability.
     - **systemctl, service:** Manage system services.
 - **Tip:** Automate service monitoring with tools like Monit or Nagios.
 
-## 3. Advanced Administration Tasks:
+## iii. Advanced Administration Tasks:
 ### Shell Scripting for Automation
 Automation reduces manual effort and ensures consistency.
 - Write reusable scripts for tasks like backups, log rotations, or updates.
@@ -154,3 +153,26 @@ Optimize the kernel for specific workloads:
 - Adjust kernel parameters with sysctl.
 - Analyze system bottlenecks with perf, dstat, or iotop.
 
+## iv. Practical Real-World Scenarios:
+### Scenario 1: High CPU Utilization
+
+**Problem:** A service consumes excessive CPU. Solution:
+**Solution:**
+1. Use top to identify the process.
+2. Check logs or configurations for anomalies.
+3. Adjust system limits in /etc/security/limits.conf.
+
+### Scenario 2: Network Latency
+
+**Problem:** Applications experience slow network responses. 
+**Solution:**
+1. Diagnose with ping and traceroute.
+2. Use tcpdump or iftop for deeper analysis.
+3. Optimize configurations in /etc/sysctl.conf.
+
+### Scenario 3: Disk Space Issues
+**Problem:** A server runs out of disk space. 
+**Solution:**
+1. Identify large files with du -sh *.
+2. Archive or delete unnecessary files.
+3. Extend storage using LVM or mount new partitions.
