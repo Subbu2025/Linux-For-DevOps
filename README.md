@@ -55,6 +55,7 @@ Monitoring ensures the health and performance of Linux servers. Common tools inc
 
 ### II) User and Group Management:
 Managing user accounts and permissions is vital to secure multi-user systems.
+
 **Commands:**
 - **useradd, usermod, passwd:** Manage users.
   
@@ -65,4 +66,33 @@ Managing user accounts and permissions is vital to secure multi-user systems.
 **Best Practices:**
 - Use least-privilege principles.
 - Employ sudo for controlled administrative access.
+
+  ### III) Package Management:
+  
+Linux distributions rely on package managers to install, update, and remove software.
+
+- **Debian-based (e.g., Ubuntu):**
+
+    - Commands: **apt, dpkg**
+
+- **Red Hat-based (e.g., CentOS, RHEL):**
+
+  - Commands: **yum, dnf, rpm**
+- Use automation tools like Ansible or Chef for large-scale package management.
+- 
+ ### IV) File and Directory Management:
+ 
+Efficient file management ensures organized and secure systems.
+
+- **Commands:**
+- 
+- **ls, cd, mkdir, rmdir:** Directory navigation and creation.
+  
+- **cp, mv, rm:** File operations.
+
+- **find, locate, grep:** Search files.
+
+- **tar, gzip, rsync:** Compress and sync files.
+
+- **Pro Tip:** Use rsync for efficient backup and file transfer.
   
