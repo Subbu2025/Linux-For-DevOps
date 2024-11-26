@@ -47,4 +47,8 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   sudo yum install sysstat -y
   ```
+  **pidstat-jenkins-example:**
    ![pidstat-example](./images/pidstat.png)
+
+  **pidstat-docker-example:**
+   ![pidstat-docker-example](./images/pidstat-docker.png)
