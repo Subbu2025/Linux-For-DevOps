@@ -56,11 +56,11 @@ Monitoring ensures the health and performance of Linux servers. Common tools inc
 ### II) User and Group Management:
 Managing user accounts and permissions is vital to secure multi-user systems.
 - **Commands:**
-**useradd, usermod, passwd:** Manage users.
+- **useradd, usermod, passwd:** Manage users.
   
-**groupadd, gpasswd:** Manage groups.
+- **groupadd, gpasswd:** Manage groups.
 
-**chown, chmod:** Set file permissions.
+- **chown, chmod:** Set file permissions.
 
 **Best Practices:**
 - Use least-privilege principles.
