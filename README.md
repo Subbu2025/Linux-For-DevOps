@@ -36,3 +36,7 @@ This guide outlines essential Linux administration tasks for a DevOps engineer, 
 
 -[Flowchart Summary and Tips for Interviews](#flowchart-summary-and-tips-for-interviews)
 
+---
+##Introduction to Linux Administration in DevOps
+Linux Administration in the DevOps is mainly related to the management and automation of the Linux system to support applications for deployment, scalability, and reliability. 
+Through Linux, DevOps engineers can configure server, host, or deploy containerized applications with system stability support, making it crucial.
