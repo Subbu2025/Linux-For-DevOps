@@ -141,4 +141,30 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```
   - Captures CPU usage in real time every 5 seconds for 3 iterations.
      ![sar-live-data-example](./images/sar-live-data.png)
+    
   
+   - Here’s a complete guide for using the sar command to monitor system activity, which includes enabling necessary components and troubleshooting steps:
+  **Step 1: Install Sysstat**
+       i) Install the package:
+  ```bash
+  sudo yum install sysstat -y
+  ```
+       ii) Verify the installation:
+  ```bash
+  sar -V
+  ```
+  **Step 2: Enable and Start the Sysstat Service**
+  i) Enable the service:
+  ```bash
+  sudo systemctl enable sysstat
+  ```
+  ii) Start the service:
+  ```bash
+  sudo systemctl enable sysstat
+  ```
+  iii) Verify the service is running:
+  ```bash
+  sudo systemctl status sysstat
+  ```
+
+  ![enable-sar-example](./images/enable-sar.png)
