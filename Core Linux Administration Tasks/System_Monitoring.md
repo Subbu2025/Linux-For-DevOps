@@ -105,11 +105,11 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   docker stats
   ```
-    - docker stat command output example:
+ - Look for the MySQL container's IO metrics.
+  - docker stat command output example:
     
      ![dockerstat-example](./images/dockerstat.png)
     
-  - Look for the MySQL container's IO metrics.
 
   **3. Solution:**
   - Move the database files to a faster storage backend (e.g., AWS EBS gp3 or io2 volumes).
