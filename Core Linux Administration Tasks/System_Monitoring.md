@@ -181,15 +181,19 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   
   Check if a cron job exists:
   
-  i) Configure a cronjob:
+    i) Configure a cronjob:
+  
     ```bash
     sudo crontab -e
     ```
- - Add the following line to collect system activity data every 10 minutes:
+   - Add the following line to collect system activity data every 10 minutes:
+  
     ```bash
     */10 * * * * /usr/lib64/sa/sa1 1 1
     ```
-  ii) Verify the cron job:
+    
+    ii) Verify the cron job:
+  
     ```bash
     sudo crontab -l
     ```
@@ -197,14 +201,20 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ![sar-cron-example](./images/sar-cron.png)
 
   **Option B: Using Systemd Timers**
+  
   - If your system uses systemd timers instead of cron:
-  i) Check for sysstat timers:
+  - 
+    i) Check for sysstat timers:
+    
     ```bash
     sudo systemctl list-timers | grep sysstat
     ```
- ii) Enable and start the timer:
+    
+   ii) Enable and start the timer:
+  
     ```bash
     sudo systemctl enable sysstat-collect.timer
     sudo systemctl start sysstat-collect.timer
     ```
+    
   ![sar-timer-example](./images/sar-timer.png)
