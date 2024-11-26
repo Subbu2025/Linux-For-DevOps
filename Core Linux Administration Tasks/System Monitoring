@@ -1,13 +1,13 @@
-## ii. Core Linux Administration Tasks
-### 1) System Monitoring:
+## iCore Linux Administration Tasks
+### System Monitoring:
 
 Monitoring ensures the health and performance of Linux servers. Common tools include:
 
-- **top, htop:** View real-time resource usage.
+**top, htop:** View real-time resource usage.
 
-- **vmstat, iostat:** Monitor CPU and I/O statistics.
+**vmstat, iostat:** Monitor CPU and I/O statistics.
 
-- **sar:** Collect, report, and save system activity.
+**sar:** Collect, report, and save system activity.
 
-- **nmon:** Visualize system metrics like CPU, memory, and network usage.
+**nmon:** Visualize system metrics like CPU, memory, and network usage.
 
