@@ -106,6 +106,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   docker stats
   ```
     - docker stat command output example:
+    
      ![dockerstat-example](./images/dockerstat.png)
     
   - Look for the MySQL container's IO metrics.
