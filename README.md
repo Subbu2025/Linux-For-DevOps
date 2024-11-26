@@ -42,8 +42,14 @@ Linux Administration in the DevOps is mainly related to the management and autom
 Through Linux, DevOps engineers can configure server, host, or deploy containerized applications with system stability support, making it crucial.
 ## 2. Core Linux Administration Tasks
 ### i) System Monitoring:
+
 Monitoring ensures the health and performance of Linux servers. Common tools include:
+
 **top, htop:** View real-time resource usage.
+
 **vmstat, iostat:** Monitor CPU and I/O statistics.
+
 **sar:** Collect, report, and save system activity.
+
 **nmon:** Visualize system metrics like CPU, memory, and network usage.
+
