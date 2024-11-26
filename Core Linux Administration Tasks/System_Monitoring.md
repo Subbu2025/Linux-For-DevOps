@@ -218,3 +218,74 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
     ```
     
   ![sar-timer-example](./images/sar-timer.png)
+
+  **Step 4: Verify Data Collection**
+  
+  Data collected by sysstat is stored in /var/log/sa/.
+  
+ i) Check for data files:
+ 
+ ```bash
+  ls -l /var/log/sa/
+  ```
+  Files like sa26 (raw data) and sar26 (human-readable reports) should appear.
+  
+ii) Manually test data collection: To verify that sa1 is working, manually trigger it:
+
+```bash
+  sudo /usr/lib64/sa/sa1 1 1
+```
+Check if a new file appears in /var/log/sa/
+
+**Step 5: Use the sar Command**
+
+Once data is collected, you can use sar to analyze system performance:
+
+i) Overall CPU usage for the current day:
+
+```bash
+  sar -u
+```
+![sar-u-example](./images/sar-u.png)
+
+ii) Memory Usage:
+
+```bash
+  sar -r
+```
+
+![sar-r-example](./images/sar-r.png)
+
+iii) Network Usage:
+
+```bash
+  sar -n DEV
+```
+![sar-n-example](./images/sar-n.png)
+
+iv) Disk I/O:
+
+```bash
+  sar -d
+```
+![sar-d-example](./images/sar-d.png)
+
+v) Load Average:
+
+```bash
+  sar -q
+```
+![sar-q-example](./images/sar-q.png)
+
+vi) Historical Data Analysis:
+
+- View data from a specific log file (e.g., /var/log/sa/sa26):
+
+```bash
+  sar -f /var/log/sa/sa26
+```
+![sar-f-example](./images/sar-f.png)
+
+
+
+
