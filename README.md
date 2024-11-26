@@ -1,5 +1,5 @@
 # Linux Administration Tasks for a DevOps Engineer
-Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.
+#### Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.
 ---
 ## Table of Contents
 - 1. [Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
@@ -156,7 +156,8 @@ Optimize the kernel for specific workloads:
 ## iv. Practical Real-World Scenarios:
 ### Scenario 1: High CPU Utilization
 
-**Problem:** A service consumes excessive CPU. Solution:
+**Problem:** A service consumes excessive CPU. 
+
 **Solution:**
 1. Use top to identify the process.
 2. Check logs or configurations for anomalies.
@@ -165,6 +166,7 @@ Optimize the kernel for specific workloads:
 ### Scenario 2: Network Latency
 
 **Problem:** Applications experience slow network responses. 
+
 **Solution:**
 1. Diagnose with ping and traceroute.
 2. Use tcpdump or iftop for deeper analysis.
@@ -172,6 +174,7 @@ Optimize the kernel for specific workloads:
 
 ### Scenario 3: Disk Space Issues
 **Problem:** A server runs out of disk space. 
+
 **Solution:**
 1. Identify large files with du -sh *.
 2. Archive or delete unnecessary files.
