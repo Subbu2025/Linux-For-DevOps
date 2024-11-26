@@ -10,7 +10,7 @@
 1. Monitor Running Processes:
 Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 **Example:**
-- **View running processes related to Jenkins:**
+- **1.1) View running processes related to Jenkins:**
   ```bash
   ps aux | grep jenkins
   ```
@@ -18,7 +18,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   ![process-example](./images/ps.png)
 
-- **Inspect system-wide process details:**
+- **1.2) Inspect system-wide process details: top**
   ```bash
   top
   ```
@@ -26,14 +26,14 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   ![top-example](./images/top.png)
 
-- **Use htop for interactive process management:**
+- **1.3) Use htop for interactive process management: htop**
   ```bash
   htop
   ```
   - Navigate the process list using arrow keys.
   - Search for Jenkins or Docker processes by pressing / and typing "jenkins" or "docker".
 
-- **Check detailed stats of a specific process:**
+- **1.4) Check detailed stats of a specific process: pidstat**
   ```bash
   pidstat -p <PID>
   ```
@@ -53,7 +53,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **pidstat-docker-example:**
    ![pidstat-docker-example](./images/pidstat-docker.png)
 
-- **vmstat (Virtual Memory Statistics):**
+- **1.5) vmstat (Virtual Memory Statistics):**
     - Purpose: Displays a snapshot of system performance, including CPU, memory, and I/O usage. Ideal for identifying bottlenecks.
       - Key Metrics:
         - CPU: us (user), sy (system), id (idle), wa (waiting for I/O).
