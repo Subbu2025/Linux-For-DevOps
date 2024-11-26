@@ -72,11 +72,13 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   - wa: High values indicate I/O bottlenecks (e.g., slow disk or network)
 - To detect high I/O wait during Jenkins builds, execute vmstat while a Jenkins job is running. If the 'wa' value is elevated, look into the performance of the disk or the activity of Docker containers.
 
-  - **1.6) iostat (Input/Output Statistics):**
+- **1.6) iostat (Input/Output Statistics):**
     - **Purpose:** This tool provides insights into CPU usage and the I/O performance of storage devices and partitions.
         - **Key Metrics:**
-          - **CPU:** %user, %system, %iowait, %idle.
-          - **Disk I/O:** tps (transactions/sec), kB_read/s, kB_wrtn/s
+          - **%iowait:** The percentage of CPU time spent waiting for I/O operations to finish. Elevated values suggest possible disk or network bottlenecks.
+          - **r/s, w/s:** The number of read and write requests per second, showing the intensity of disk activity.
+          - **rkB/s, wkB/s:** Kilobytes read and written per second, indicating the data transfer rate.
+          - **%util:** The percentage of time the disk was busy. Values nearing 100% indicate the disk is a bottleneck.
 
   **Example Use Cases:**
   - **Monitor disk I/O in real time (update every second):**
