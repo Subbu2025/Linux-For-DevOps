@@ -2,39 +2,39 @@
 **Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.**
 ---
 ## Table of Contents
-- [Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
+- 1. [Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
 
-- [Core Linux Administration Tasks](#core-linux-administration)
+- 2. [Core Linux Administration Tasks](#core-linux-administration)
 
-- [System Monitoring](#system-monitoring)
+    - [System Monitoring](#system-monitoring)
 
-- [User and Group Management](#user-and-group-management)
+    - [User and Group Management](#user-and-group-management)
 
-- [Package Management](#package-management)
+    - [Package Management](#package-management)
 
-- [File and Directory Management](#file-and-directory-management)
+    - [File and Directory Management](#file-and-directory-management)
 
-- [Disk and Storage Management](#disk-and-storage)
+    - [Disk and Storage Management](#disk-and-storage)
 
-- [Networking Configuration](#network-configuration)
+    - [Networking Configuration](#network-configuration)
 
-- [Process and Service Management](#process-and-service-management)
+  - [Process and Service Management](#process-and-service-management)
 
-- [Advanced Administration Tasks](#advanced-administration-tasks)
+- 3. [Advanced Administration Tasks](#advanced-administration-tasks)
 
-- [Shell Scripting for Automation](#shell-scripting-for-automation)
+    - [Shell Scripting for Automation](#shell-scripting-for-automation)
 
-- [Security Hardening](#security-hardening)
+    - [Security Hardening](#security-hardening)
 
-- [Backup and Restore](#backup-and-restore)
+    - [Backup and Restore](#backup-and-restore)
 
-- [Log Management](#log-management)
+    - [Log Management](#log-management)
 
-- [Kernel Tuning and Performance Optimization](#kernel-tuning-and-performance-optimization)
+    - [Kernel Tuning and Performance Optimization](#kernel-tuning-and-performance-optimization)
 
-- [Practical Real-World Scenarios](#practical-real-world-scenarios)
+- 4. [Practical Real-World Scenarios](#practical-real-world-scenarios)
 
-- [Flowchart Summary and Tips for Interviews](#flowchart-summary-and-tips-for-interviews)
+- 5. [Flowchart Summary and Tips for Interviews](#flowchart-summary-and-tips-for-interviews)
   
 ---
 ## 1. Introduction to Linux Administration in DevOps
@@ -112,19 +112,45 @@ Linux servers often act as network nodes, requiring proper setup and monitoring.
     - **ifconfig, ip:** View and configure network interfaces.
     - **netstat, ss:** Analyze network connections.
     - **iptables, firewalld:** Manage firewall rules.
-  
 - **Tools:**
     - **tcpdump, nmap:** Network debugging and scanning.
     - **ping, traceroute:** Diagnose network issues.
-
 ### VI) Process and Service Management:
 Manage active processes and services for system stability.
 
 - **Commands:**
-
     - **ps, top, kill:** Process management.
-
     - **systemctl, service:** Manage system services.
-
 - **Tip:** Automate service monitoring with tools like Monit or Nagios.
-  
+
+## 3. Advanced Administration Tasks:
+### Shell Scripting for Automation
+Automation reduces manual effort and ensures consistency.
+- Write reusable scripts for tasks like backups, log rotations, or updates.
+- Use tools like cron or at to schedule scripts.
+
+### Security Hardening
+Ensure system security by:
+- Implementing firewalls and SELinux/AppArmor.
+- Regularly applying patches and updates.
+- Enforcing SSH key-based authentication.
+- Monitoring login attempts using fail2ban.
+
+### Backup and Restore
+Plan robust backup strategies to prevent data loss.
+
+- **Tools:**
+    - **rsync:** Incremental backups.
+    - **tar, gzip:** File-based backups.
+    - Automate periodic backups and test restore processes.
+
+### Log Management
+Logs help diagnose and audit system activities.
+- Use tools like Logrotate to manage log file sizes.
+- Centralize logs with ELK Stack (Elasticsearch, Logstash, Kibana).
+
+### Kernel Tuning and Performance Optimization
+Optimize the kernel for specific workloads:
+- Adjust kernel parameters with sysctl.
+- Analyze system bottlenecks with perf, dstat, or iotop.
+
