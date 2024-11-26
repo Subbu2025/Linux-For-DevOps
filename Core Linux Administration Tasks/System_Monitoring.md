@@ -203,11 +203,12 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **Option B: Using Systemd Timers**
   
   - If your system uses systemd timers instead of cron:
+    
   i) Check for sysstat timers:
     
-    ```bash
-    sudo systemctl list-timers | grep sysstat
-    ```
+  ```bash
+  sudo systemctl list-timers | grep sysstat
+  ```
     
   ii) Enable and start the timer:
   
