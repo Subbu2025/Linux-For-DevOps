@@ -145,13 +145,13 @@ Plan robust backup strategies to prevent data loss.
 
 ### Log Management
 Logs help diagnose and audit system activities.
-- Use tools like Logrotate to manage log file sizes.
-- Centralize logs with ELK Stack (Elasticsearch, Logstash, Kibana).
+- Use tools like **Logrotate** to manage log file sizes.
+- Centralize logs with **ELK Stack (Elasticsearch, Logstash, Kibana)**.
 
 ### Kernel Tuning and Performance Optimization
 Optimize the kernel for specific workloads:
-- Adjust kernel parameters with sysctl.
-- Analyze system bottlenecks with perf, dstat, or iotop.
+- Adjust kernel parameters with **sysctl**.
+- Analyze system bottlenecks with **perf**, **dstat**, or **iotop**.
 
 ## iv. Practical Real-World Scenarios:
 ### Scenario 1: High CPU Utilization
@@ -159,23 +159,23 @@ Optimize the kernel for specific workloads:
 **Problem:** A service consumes excessive CPU. 
 
 **Solution:**
-1. Use top to identify the process.
+1. Use **top** to identify the process.
 2. Check logs or configurations for anomalies.
-3. Adjust system limits in /etc/security/limits.conf.
+3. Adjust system limits in **/etc/security/limits.conf**.
 
 ### Scenario 2: Network Latency
 
 **Problem:** Applications experience slow network responses. 
 
 **Solution:**
-1. Diagnose with ping and traceroute.
-2. Use tcpdump or iftop for deeper analysis.
-3. Optimize configurations in /etc/sysctl.conf.
+1. Diagnose with **ping** and traceroute.
+2. Use **tcpdump** or **iftop** for deeper analysis.
+3. Optimize configurations in **/etc/sysctl.conf**.
 
 ### Scenario 3: Disk Space Issues
 **Problem:** A server runs out of disk space. 
 
 **Solution:**
-1. Identify large files with du -sh *.
+1. Identify large files with **du -sh ***.
 2. Archive or delete unnecessary files.
 3. Extend storage using LVM or mount new partitions.
