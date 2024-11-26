@@ -168,3 +168,4 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```
 
   ![enable-sar-example](./images/enable-sar.png)
+  ![sar-v-example](./images/sar-v.png)
