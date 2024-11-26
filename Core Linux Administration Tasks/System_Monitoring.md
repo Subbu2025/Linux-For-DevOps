@@ -125,3 +125,20 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
         
         - Alternatively, on the EKS node, use iostat to check the performance of the /dev/xvda or /dev/nvme* devices.
 
+- **1.7) sar (System Activity Reporter):**
+    **Purpose:**
+    - The sar command is used to collect, report, and save metrics related to system performance, such as CPU, memory, disk, and network usage. It is 
+      particularly helpful for analyzing real-time system activity as well as historical trends from logs that were collected earlier.
+    - **Key Metrics Tracked:**
+        - **CPU usage:** %user, %system, %iowait, %idle, etc.
+        - **Disk I/O:** Transfer rates, wait times, and device utilization.
+        - **Memory usage:** Free and used memory, swap activity.
+        - **Network usage:** Packet transfer rates and errors over time.
+    - **Usage:**
+        - **Real-Time CPU Usage:**
+  ```bash
+  sar -u 5 3
+  ```
+  - Captures CPU usage in real time every 5 seconds for 3 iterations.
+    
+  
