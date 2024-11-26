@@ -1,0 +1,10 @@
+## Core Linux Administration Tasks
+
+### 1) System Monitoring
+Monitoring ensures the health and performance of Linux servers.
+
+- **top, htop:** View real-time resource usage.
+- **vmstat, iostat:** Monitor CPU and I/O statistics.
+- **sar:** Collect, report, and save system activity.
+
+
