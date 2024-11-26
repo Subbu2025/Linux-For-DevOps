@@ -14,4 +14,5 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   ps aux | grep jenkins
   ```
+![process-example](./images/ps.png)
 
