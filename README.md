@@ -37,11 +37,11 @@
 - [Flowchart Summary and Tips for Interviews](#flowchart-summary-and-tips-for-interviews)
   
 ---
-## Introduction to Linux Administration in DevOps
+## 1. Introduction to Linux Administration in DevOps
 Linux Administration in the DevOps is mainly related to the management and automation of the Linux system to support applications for deployment, scalability, and reliability. 
 Through Linux, DevOps engineers can configure server, host, or deploy containerized applications with system stability support, making it crucial.
 ## 2. Core Linux Administration Tasks
-### i) System Monitoring:
+### I) System Monitoring:
 
 Monitoring ensures the health and performance of Linux servers. Common tools include:
 
@@ -53,3 +53,16 @@ Monitoring ensures the health and performance of Linux servers. Common tools inc
 
 **nmon:** Visualize system metrics like CPU, memory, and network usage.
 
+### II) User and Group Management:
+Managing user accounts and permissions is vital to secure multi-user systems.
+- **Commands:**
+**useradd, usermod, passwd:** Manage users.
+  
+**groupadd, gpasswd:** Manage groups.
+
+**chown, chmod:** Set file permissions.
+
+**Best Practices:**
+- Use least-privilege principles.
+- Employ sudo for controlled administrative access.
+  
