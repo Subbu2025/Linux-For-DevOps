@@ -140,5 +140,5 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   sar -u 5 3
   ```
   - Captures CPU usage in real time every 5 seconds for 3 iterations.
-    
+     ![sar-live-data-example](./images/sar-live-data.png)
   
