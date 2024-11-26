@@ -6,7 +6,7 @@
 
 - [i. Introduction to Linux Administration in DevOps](#i-introduction-to-linux-administration-in-devops)
 - [ii. Core Linux Administration Tasks](#ii-core-linux-administration-tasks)
-    - [1) System Monitoring](#1-system-monitoring)
+    - [1) Process and System Monitoring](#1-process-and-system-monitoring)
     - [2) User and Group Management](#2-user-and-group-management)
     - [3) Package Management](#3-package-management)
     - [4) File and Directory Management](#4-file-and-directory-management)
@@ -29,7 +29,7 @@
 Linux Administration in the DevOps is mainly related to the management and automation of the Linux system to support applications for deployment, scalability, and reliability. 
 Through Linux, DevOps engineers can configure server, host, or deploy containerized applications with system stability support, making it crucial.
 ## ii. Core Linux Administration Tasks
-### 1) System Monitoring:
+### 1) Process and System Monitoring:
 
 Monitoring ensures the health and performance of Linux servers. Common tools include:
 
