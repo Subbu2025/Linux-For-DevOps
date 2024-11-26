@@ -14,14 +14,36 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   ps aux | grep jenkins
   ```
-This shows all processes related to Jenkins, along with their PID and memory usage.
+  This shows all processes related to Jenkins, along with their PID and memory usage.
 
-![process-example](./images/ps.png)
+  ![process-example](./images/ps.png)
 
 - **Inspect system-wide process details:**
-   ```bash
+  ```bash
   top
   ```
-Provides a live view of system processes, along with CPU and memory usage statistics.
+  Provides a live view of system processes, along with CPU and memory usage statistics.
 
-![top-example](./images/top.png)
+  ![top-example](./images/top.png)
+
+- **Use htop for interactive process management:**
+  ```bash
+  htop
+  ```
+  - Navigate the process list using arrow keys.
+  - Search for Jenkins or Docker processes by pressing / and typing "jenkins" or "docker".
+
+- **Check detailed stats of a specific process:**
+  ```bash
+  pidstat -p <PID>
+  ```
+   Replace <PID> with the process ID of Jenkins or Docker to see CPU and memory usage.
+  **Note:**
+  The pidstat command is included in the sysstat package, which might not come pre-installed on your EC2 instance.
+  You can install it by following these steps:
+  
+  - **Amazon Linux / Amazon Linux 2 / RHEL / CentOS:**
+  ```bash
+  sudo yum install sysstat -y
+  ```
+  
