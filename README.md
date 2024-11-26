@@ -1,6 +1,5 @@
 # Linux Administration Tasks for a DevOps Engineer
-Linux is a cornerstone of modern DevOps practices, serving as the primary operating system for servers, containers, and cloud environments. 
-This guide outlines essential Linux administration tasks for a DevOps engineer, helping manage infrastructure effectively and ensuring smooth CI/CD pipeline operations.
+**Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.**
 ---
 ## Table of Contents
 -[Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
