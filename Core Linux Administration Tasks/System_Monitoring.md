@@ -14,6 +14,14 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   ps aux | grep jenkins
   ```
-  This displays all Jenkins-related processes, including the PID and memory usage.
+This shows all processes related to Jenkins, along with their PID and memory usage.
+
 ![process-example](./images/ps.png)
 
+- Inspect system-wide process details:
+   ```bash
+  top
+  ```
+Provides a live view of system processes, along with CPU and memory usage statistics.
+
+![top-example](./images/top.png)
