@@ -136,9 +136,9 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
         - **Network usage:** Packet transfer rates and errors over time.
     - **Usage:**
         - **Real-Time CPU Usage:**
-  ```bash
-  sar -u 5 3
-  ```
+    ```bash
+    sar -u 5 3
+    ```
   - Captures CPU usage in real time every 5 seconds for 3 iterations.
      ![sar-live-data-example](./images/sar-live-data.png)
     
@@ -147,26 +147,28 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
    **Step 1: Install Sysstat**
        i) Install the package:
-  ```bash
-  sudo yum install sysstat -y
-  ```
+    ```bash
+    sudo yum install sysstat -y
+    ```
        ii) Verify the installation:
-  ```bash
-  sar -V
-  ```
+    ```bash
+    sar -V
+    ```
+  
   **Step 2: Enable and Start the Sysstat Service**
+  
   i) Enable the service:
-  ```bash
-  sudo systemctl enable sysstat
-  ```
+    ```bash
+    sudo systemctl enable sysstat
+    ```
   ii) Start the service:
-  ```bash
-  sudo systemctl enable sysstat
-  ```
+    ```bash
+    sudo systemctl enable sysstat
+    ```
   iii) Verify the service is running:
-  ```bash
-  sudo systemctl status sysstat
-  ```
+    ```bash
+    sudo systemctl status sysstat
+    ```
 
   ![enable-sar-example](./images/enable-sar.png)
   ![sar-v-example](./images/sar-v.png)
@@ -176,28 +178,28 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **Option A: Using Cron Jobs**
   Check if a cron job exists:
   i) Configure a cronjob:
-  ```bash
-  sudo crontab -e
-  ```
+    ```bash
+    sudo crontab -e
+    ```
  - Add the following line to collect system activity data every 10 minutes:
-  ```bash
-  */10 * * * * /usr/lib64/sa/sa1 1 1
-  ```
+    ```bash
+    */10 * * * * /usr/lib64/sa/sa1 1 1
+    ```
   ii) Verify the cron job:
-  ```bash
-  sudo crontab -l
-  ```
+    ```bash
+    sudo crontab -l
+    ```
   ![sar-cron-example](./images/sar-cron.png)
 
   **Option B: Using Systemd Timers**
   - If your system uses systemd timers instead of cron:
   i) Check for sysstat timers:
- ```bash
-  sudo systemctl list-timers | grep sysstat
-  ```
+   ```bash
+    sudo systemctl list-timers | grep sysstat
+    ```
  ii) Enable and start the timer:
- ```bash
-  sudo systemctl enable sysstat-collect.timer
-  sudo systemctl start sysstat-collect.timer
-  ```
+   ```bash
+    sudo systemctl enable sysstat-collect.timer
+    sudo systemctl start sysstat-collect.timer
+    ```
   ![sar-timer-example](./images/sar-timer.png)
