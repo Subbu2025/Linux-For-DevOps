@@ -67,7 +67,7 @@ Managing user accounts and permissions is vital to secure multi-user systems.
 - Use least-privilege principles.
 - Employ sudo for controlled administrative access.
 
-  ### III) Package Management:
+### III) Package Management:
   
 Linux distributions rely on package managers to install, update, and remove software.
 
@@ -93,4 +93,38 @@ Efficient file management ensures organized and secure systems.
     - **tar, gzip, rsync:** Compress and sync files.
 
 - **Pro Tip:** Use rsync for efficient backup and file transfer.
+  
+### IV) Disk and Storage Management:
+Disk management ensures proper utilization and storage capacity.
+
+- **Commands:**
+    - **df, du:** Check disk usage.
+    - **mount, umount:** Manage mounted filesystems.
+    - **fdisk, lsblk:** Partition management.
+      
+- Implement LVM (Logical Volume Management) for flexible storage.
+
+### IV) Networking Configuration:
+
+Linux servers often act as network nodes, requiring proper setup and monitoring.
+
+- **Commands:**
+    - **ifconfig, ip:** View and configure network interfaces.
+    - **netstat, ss:** Analyze network connections.
+    - **iptables, firewalld:** Manage firewall rules.
+  
+- **Tools:**
+    - **tcpdump, nmap:** Network debugging and scanning.
+    - **ping, traceroute:** Diagnose network issues.
+
+### VI) Process and Service Management:
+Manage active processes and services for system stability.
+
+- **Commands:**
+
+    - **ps, top, kill:** Process management.
+
+    - **systemctl, service:** Manage system services.
+
+- **Tip:** Automate service monitoring with tools like Monit or Nagios.
   
