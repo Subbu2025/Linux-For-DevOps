@@ -52,3 +52,18 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   **pidstat-docker-example:**
    ![pidstat-docker-example](./images/pidstat-docker.png)
+
+  - **vmstat (Virtual Memory Statistics):**
+    - Purpose: Displays a snapshot of system performance, including CPU, memory, and I/O usage. Ideal for identifying bottlenecks.
+      - Key Metrics:
+        - CPU: us (user), sy (system), id (idle), wa (waiting for I/O).
+        - Memory: free, buff, cache.
+        - Disk I/O: bi (blocks in), bo (blocks out)
+  **Example Use Cases:**
+        - Monitor system performance in real time (every second for 5 intervals):
+  ```bash
+  vmstat 1 5
+  ```
+  **Output Example:**
+
+  ![vmstat-example](./images/vmstat.png)
