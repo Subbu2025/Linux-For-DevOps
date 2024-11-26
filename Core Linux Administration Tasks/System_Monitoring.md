@@ -10,7 +10,7 @@
 1. Monitor Running Processes:
 Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 **Example:**
-- View running processes related to Jenkins:
+- **View running processes related to Jenkins:**
   ```bash
   ps aux | grep jenkins
   ```
@@ -18,7 +18,7 @@ This shows all processes related to Jenkins, along with their PID and memory usa
 
 ![process-example](./images/ps.png)
 
-- Inspect system-wide process details:
+- **Inspect system-wide process details:**
    ```bash
   top
   ```
