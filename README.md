@@ -2,7 +2,7 @@
 **Linux is the backbone of modern-day DevOps, serving as the primary OS for servers, containers, and cloud environments. This guide describes the most important Linux administration tasks with which DevOps engineers must be familiar in order to manage infrastructure effectively and ensure smooth operations of CI/CD pipelines.**
 ---
 ## Table of Contents
--[Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
+- [Introduction to Linux Administration in DevOps](#introduction-to-linux-administration-in-devops)
 
 - [Core Linux Administration Tasks](#core-linux-administration)
 
@@ -40,3 +40,10 @@
 ## Introduction to Linux Administration in DevOps
 Linux Administration in the DevOps is mainly related to the management and automation of the Linux system to support applications for deployment, scalability, and reliability. 
 Through Linux, DevOps engineers can configure server, host, or deploy containerized applications with system stability support, making it crucial.
+## 2. Core Linux Administration Tasks
+### i) System Monitoring:
+Monitoring ensures the health and performance of Linux servers. Common tools include:
+**top, htop:** View real-time resource usage.
+**vmstat, iostat:** Monitor CPU and I/O statistics.
+**sar:** Collect, report, and save system activity.
+**nmon:** Visualize system metrics like CPU, memory, and network usage.
