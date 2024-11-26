@@ -144,7 +144,8 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
     
   
    - Here’s a complete guide for using the sar command to monitor system activity, which includes enabling necessary components and troubleshooting steps:
-  **Step 1: Install Sysstat**
+
+   **Step 1: Install Sysstat**
        i) Install the package:
   ```bash
   sudo yum install sysstat -y
@@ -169,3 +170,34 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   ![enable-sar-example](./images/enable-sar.png)
   ![sar-v-example](./images/sar-v.png)
+
+  **Step 3: Configure Data Collection**
+  The sar command depends on regular data collection performed by the sa1 script, which is activated through cron jobs or systemd timers.
+  **Option A: Using Cron Jobs**
+  Check if a cron job exists:
+  i) Configure a cronjob:
+  ```bash
+  sudo crontab -e
+  ```
+ - Add the following line to collect system activity data every 10 minutes:
+  ```bash
+  */10 * * * * /usr/lib64/sa/sa1 1 1
+  ```
+  ii) Verify the cron job:
+  ```bash
+  sudo crontab -l
+  ```
+  ![sar-cron-example](./images/sar-cron.png)
+
+  **Option B: Using Systemd Timers**
+  - If your system uses systemd timers instead of cron:
+  i) Check for sysstat timers:
+ ```bash
+  sudo systemctl list-timers | grep sysstat
+  ```
+ ii) Enable and start the timer:
+ ```bash
+  sudo systemctl enable sysstat-collect.timer
+  sudo systemctl start sysstat-collect.timer
+  ```
+  ![sar-timer-example](./images/sar-timer.png)
