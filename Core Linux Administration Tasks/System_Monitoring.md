@@ -100,7 +100,6 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   iostat -dx 1
   ```
   - If %util is consistently above 90% or w_await is high, the disk is overloaded or slow.
-  - 
   **2. Identify the container causing high disk usage:**
     
   ```bash
@@ -116,7 +115,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   For EKS, check the Kubernetes storage backends:
   
-    - If the application is using AWS EBS volumes, monitor the attached volume's performance:
+    - If the application is utilizing AWS EBS volumes, keep an eye on the performance of the attached volume:
     
         - Use AWS CloudWatch Metrics (e.g., VolumeReadOps, VolumeWriteOps) to monitor EBS volume usage.
         
