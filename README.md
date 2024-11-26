@@ -72,27 +72,25 @@ Managing user accounts and permissions is vital to secure multi-user systems.
 Linux distributions rely on package managers to install, update, and remove software.
 
 - **Debian-based (e.g., Ubuntu):**
-
     - Commands: **apt, dpkg**
 
 - **Red Hat-based (e.g., CentOS, RHEL):**
-
-  - Commands: **yum, dnf, rpm**
+    - Commands: **yum, dnf, rpm**
 - Use automation tools like Ansible or Chef for large-scale package management.
-- 
+  
  ### IV) File and Directory Management:
  
 Efficient file management ensures organized and secure systems.
 
 - **Commands:**
-- 
-- **ls, cd, mkdir, rmdir:** Directory navigation and creation.
   
-- **cp, mv, rm:** File operations.
+    - **ls, cd, mkdir, rmdir:** Directory navigation and creation.
+  
+    - **cp, mv, rm:** File operations.
 
-- **find, locate, grep:** Search files.
+    - **find, locate, grep:** Search files.
 
-- **tar, gzip, rsync:** Compress and sync files.
+    - **tar, gzip, rsync:** Compress and sync files.
 
 - **Pro Tip:** Use rsync for efficient backup and file transfer.
   
