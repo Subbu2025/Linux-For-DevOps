@@ -97,11 +97,11 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   **Alternatives to kill:**
   
-  - **killall:** Terminates processes by name:
+ - **killall:** Terminates processes by name:
   ```bash
   killall apache2
   ```
-  - **pkill:** Sends signals to processes by name, user, or other criteria:
+ - **pkill:** Sends signals to processes by name, user, or other criteria:
   ```bash
   pkill -u <username> <process_name>
   ```
