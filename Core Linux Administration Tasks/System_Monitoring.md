@@ -514,5 +514,26 @@ journalctl -u nginx.service
 
     ---
 
+## 4. Monitor log files using tail, head, less, and journalctl.
+  ### **4.1) tail:**
+
+
+
+
+
+  ### **4.2) head:**
+
+
+
+
+    
+  ### **4.3) less:**
+
+
+
+
+  ### **4.4) journalctl:**
+
+
 
 
