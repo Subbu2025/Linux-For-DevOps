@@ -73,13 +73,17 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   ```bash
   kill [options] <PID>
   ```
-  - **Common Signals:**
-    **Signal	  Name	  Description**
-        1	  SIGHUP	  Reloads the process configuration without stopping it.
-        9	  SIGKILL	  Forcefully kills the process. Cannot be caught or ignored.
-        15	SIGTERM	  Gracefully terminates the process (default signal).
-        19	SIGSTOP	  Pauses the process.
-        18	SIGCONT	  Resumes a paused process.
+  
+## Common Signals
+
+| Signal | Name      | Description                                                |
+|--------|-----------|------------------------------------------------------------|
+| 1      | `SIGHUP`  | Reloads the process configuration without stopping it.     |
+| 9      | `SIGKILL` | Forcefully kills the process. Cannot be caught or ignored. |
+| 15     | `SIGTERM` | Gracefully terminates the process (default signal).        |
+| 19     | `SIGSTOP` | Pauses the process.                                        |
+| 18     | `SIGCONT` | Resumes a paused process.                                  |
+
     
    ![kill-example](./images/kill.png)
   
