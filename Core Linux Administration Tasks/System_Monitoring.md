@@ -1,6 +1,6 @@
-## Core Linux Administration Tasks
+# Core Linux Administration Tasks
 
-### 1) Process and System Monitoring
+## Process and System Monitoring
 **Tasks:**
 1) Monitor running processes using **ps, top, htop, and pidstat**.
 2) Manage processes **(kill, pkill, nice, renice, systemctl)**.
