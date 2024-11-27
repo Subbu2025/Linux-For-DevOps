@@ -228,6 +228,16 @@ systemctl list-units --type=service --state=inactive
 journalctl -u docker.service
 journalctl -u nginx.service
 ```
+![systemctl-status-example](./images/systemctl-status.png)
+
+![systemctl-status-jenkins-example](./images/systemctl-status-jenkins.png)
+
+![systemctl-running-example](./images/systemctl-running.png)
+
+![systemctl-exited-example](./images/systemctl-exited.png)
+
+![journalctl-docker-example](./images/journalctl-docker.png)
+
 ---
  
 ### 3) Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
