@@ -60,6 +60,36 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
   **pidstat-docker-example:**
    ![pidstat-docker-example](./images/pidstat-docker.png)
+  
+
+### 2) Manage processes (kill, pkill, nice, renice, systemctl) 
+- **2.1) kill:**
+  - **Purpose:** The kill command in Linux is utilized to stop processes by sending designated signals to their process IDs (PIDs).
+  - **How kill Works:**
+    - Processes in Linux listen for signals sent to their PIDs.
+    - The kill command sends a signal (default is TERM) to the target process.
+    - The process can handle the signal (if programmed to do so) or terminate.
+  - **Syntax:**
+  ```bash
+  kill [options] <PID>
+  ```
+  - **Common Signals:**
+    **Signal	  Name	  Description**
+        1	  SIGHUP	  Reloads the process configuration without stopping it.
+        9	  SIGKILL	  Forcefully kills the process. Cannot be caught or ignored.
+        15	SIGTERM	  Gracefully terminates the process (default signal).
+        19	SIGSTOP	  Pauses the process.
+        18	SIGCONT	  Resumes a paused process.
+    
+   ![kill-example](./images/kill.png)
+  
+  - Reload Process Configuration
+    -Use SIGHUP to reload a process’s configuration without stopping it:
+  ```bash
+  kill -1 <PID>
+  ```
+  
+  ![kill-1-example](./images/kill-1.png)
 
 ### 3) Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
 
