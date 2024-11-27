@@ -6,7 +6,7 @@
 2) Manage processes **(kill, pkill, nice, renice, systemctl)**.
 3) Check system performance metrics such as CPU, memory, and disk I/O using **vmstat, iostat, and free**.
 4) Monitor log files using **tail, head, less, and journalctl**.
-
+---
 ### 1. Monitor Running Processes:
 Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
 
@@ -61,6 +61,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **pidstat-docker-example:**
    ![pidstat-docker-example](./images/pidstat-docker.png)
   
+---
 
 ### 2) Manage processes (kill, pkill, nice, renice, systemctl) 
 - **2.1) kill:**
@@ -150,7 +151,6 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   - OPTIONS: Additional flags for controlling how the command runs (e.g., --quiet or --no-block).
   - COMMAND: The action to perform on the service (e.g., start, stop, restart, etc.).
   - SERVICE_NAME: The name of the service or unit to manage (e.g., docker, jenkins, kubelet).
-
 
 ## Systemctl Command Examples
 
