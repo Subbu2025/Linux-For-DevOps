@@ -53,7 +53,9 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **pidstat-docker-example:**
    ![pidstat-docker-example](./images/pidstat-docker.png)
 
-- **1.5) vmstat (Virtual Memory Statistics):**
+## Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
+
+- **3.1) vmstat (Virtual Memory Statistics):**
     - Purpose: Displays a snapshot of system performance, including CPU, memory, and I/O usage. Ideal for identifying bottlenecks.
       - Key Metrics:
         - CPU: us (user), sy (system), id (idle), wa (waiting for I/O).
@@ -72,7 +74,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   - wa: High values indicate I/O bottlenecks (e.g., slow disk or network)
 - To detect high I/O wait during Jenkins builds, execute vmstat while a Jenkins job is running. If the 'wa' value is elevated, look into the performance of the disk or the activity of Docker containers.
 
-- **1.6) iostat (Input/Output Statistics):**
+- **3.2) iostat (Input/Output Statistics):**
     - **Purpose:** This tool provides insights into CPU usage and the I/O performance of storage devices and partitions.
         - **Key Metrics:**
           - **%iowait:** The percentage of CPU time spent waiting for I/O operations to finish. Elevated values suggest possible disk or network bottlenecks.
@@ -125,7 +127,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
         
         - Alternatively, on the EKS node, use iostat to check the performance of the /dev/xvda or /dev/nvme* devices.
 
-- **1.7) sar (System Activity Reporter):**
+- **3.3) sar (System Activity Reporter):**
     **Purpose:**
     - The sar command is used to collect, report, and save metrics related to system performance, such as CPU, memory, disk, and network usage. It is 
       particularly helpful for analyzing real-time system activity as well as historical trends from logs that were collected earlier.
@@ -146,7 +148,9 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
    - Here’s a complete guide for using the sar command to monitor system activity, which includes enabling necessary components and troubleshooting steps:
 
    **Step 1: Install Sysstat**
+  
        i) Install the package:
+  
     ```bash
     sudo yum install sysstat -y
     ```
