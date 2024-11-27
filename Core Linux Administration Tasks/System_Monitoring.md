@@ -323,6 +323,16 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
       free -h
     ```
 
+    ![free-example](./images/free.png)
+    
+   ### Scenario 1: Verifying Memory Availability in Docker Containers
+    **Problem:**  A Docker container running a critical application is slowing down, and you suspect memory usage inside the container is causing performance                       degradation.
+
+    **Solution:** Run the free command inside the container to verify memory usage.
+
+    ![free-docker-ex-example](./images/free-docker-ex.png)
+
+   
     
 
 
