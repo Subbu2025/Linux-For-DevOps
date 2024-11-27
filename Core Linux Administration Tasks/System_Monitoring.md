@@ -106,6 +106,38 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   pkill -u <username> <process_name>
   ```
  - **xkill:** Graphically kill a window on desktop environments.
+
+- **2.2) nice ,renice):**
+  ### Purpose: Nice and renice are commands used to modify the priority of a process, influencing the amount of CPU time it receives in relation to other processes.
+  - **2.2.1) nice:**
+    Used to start a new process with a specified niceness value (priority level).
+  ```bash
+  nice -n <niceness_value> <command>
+  ```
+  - <niceness_value>: A number between -20 (highest priority) and 19 (lowest priority). The default is 0.
+  
+  - Lower niceness = higher priority.
+    
+  **Example:**
+  ```bash
+  nice -n 10 python script.py
+  ```
+  - Starts the process python script.py with a lower priority (niceness value 10).
+ 
+  - **2.2.2) renice:**
+    Used to change the priority of an already running process.
+  ```bash
+  renice <niceness_value> -p <PID>
+  ```
+  - <niceness_value>: The new priority value.
+  
+  - <PID>: Process ID of the target process.
+    
+  **Example:**
+  ```bash
+  renice 5 -p 1234
+  ```
+  - It changes the priority of the process with PID 1234 to 5
  
 ### 3) Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
 
