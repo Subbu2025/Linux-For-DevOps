@@ -152,23 +152,23 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   - SERVICE_NAME: The name of the service or unit to manage (e.g., docker, jenkins, kubelet).
 
 
-# Systemctl Command Examples
+## Systemctl Command Examples
 
-## Start a Service
+### Start a Service
 
 To start a service using the `systemctl` command:
 ```bash
 sudo systemctl start docker
 ```
 
-## Stop a Service
+### Stop a Service
 
 To stop a service using the systemctl command:
 ```bash
 sudo systemctl stop docker
 ```
 
-## Restart a Service
+### Restart a Service
 
 To restart a service using the systemctl command:
 ```bash
@@ -176,7 +176,7 @@ sudo systemctl restart docker
 sudo systemctl restart jenkins
 ```
 
-## Check the Status of a Service
+### Check the Status of a Service
 To check the status of a service:
 
 ```bash
@@ -184,7 +184,7 @@ systemctl status docker
 systemctl status kubelet
 ```
 
-## Enable a Service to Start at Boot
+### Enable a Service to Start at Boot
 To enable a service to start automatically at boot:
 
 ```bash
@@ -192,14 +192,14 @@ sudo systemctl enable docker
 sudo systemctl enable jenkins
 ```
 
-## Disable a Service from Starting at Boot
+### Disable a Service from Starting at Boot
 To prevent a service from starting automatically at boot:
 
 ```bash
 sudo systemctl disable docker
 ```
 
-## Reload Configuration Without Restarting
+### Reload Configuration Without Restarting
 To reload the configuration of a service without restarting it:
 
 ```bash
@@ -207,7 +207,7 @@ sudo systemctl reload nginx
 sudo systemctl reload apache2
 ```
 
-## View All Running Services
+### View All Running Services
 To view all running services on the system:
 
 ```bash
@@ -215,7 +215,7 @@ systemctl list-units --type=service
 systemctl list-units --state=running
 ```
 
-## Additional Examples
+### Additional Examples
 List Services by Specific States
 
 ```bash
@@ -223,7 +223,7 @@ systemctl list-units --type=service --state=failed
 systemctl list-units --type=service --state=inactive
 ```
 
-##Check System Logs for a Service
+### Check System Logs for a Service
 ```bash
 journalctl -u docker.service
 journalctl -u nginx.service
