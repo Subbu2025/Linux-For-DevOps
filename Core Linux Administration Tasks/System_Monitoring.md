@@ -501,8 +501,7 @@ journalctl -u nginx.service
 
     ![free-docker-ex-example](./images/free-docker-ex.png)
 
-   
-    
+    ---
 
 
 
