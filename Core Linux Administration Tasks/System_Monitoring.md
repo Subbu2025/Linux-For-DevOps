@@ -74,15 +74,15 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   kill [options] <PID>
   ```
   
-## Common Signals
+    ## Common Signals
 
-| Signal | Name      | Description                                                |
-|--------|-----------|------------------------------------------------------------|
-| 1      | `SIGHUP`  | Reloads the process configuration without stopping it.     |
-| 9      | `SIGKILL` | Forcefully kills the process. Cannot be caught or ignored. |
-| 15     | `SIGTERM` | Gracefully terminates the process (default signal).        |
-| 19     | `SIGSTOP` | Pauses the process.                                        |
-| 18     | `SIGCONT` | Resumes a paused process.                                  |
+    | Signal | Name      | Description                                                |
+    |--------|-----------|------------------------------------------------------------|
+    | 1      | `SIGHUP`  | Reloads the process configuration without stopping it.     |
+    | 9      | `SIGKILL` | Forcefully kills the process. Cannot be caught or ignored. |
+    | 15     | `SIGTERM` | Gracefully terminates the process (default signal).        |
+    | 19     | `SIGSTOP` | Pauses the process.                                        |
+    | 18     | `SIGCONT` | Resumes a paused process.                                  |
 
     
    ![kill-example](./images/kill.png)
@@ -95,6 +95,18 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   
   ![kill-1-example](./images/kill-1.png)
 
+  **Alternatives to kill:**
+  
+  - **killall:** Terminates processes by name:
+  ```bash
+  killall apache2
+  ```
+  - **pkill:** Sends signals to processes by name, user, or other criteria:
+  ```bash
+  pkill -u <username> <process_name>
+  ```
+ - **xkill:** Graphically kill a window on desktop environments.
+ 
 ### 3) Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
 
 - **3.1) vmstat (Virtual Memory Statistics):**
