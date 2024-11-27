@@ -7,9 +7,11 @@
 3) Check system performance metrics such as CPU, memory, and disk I/O using **vmstat, iostat, and free**.
 4) Monitor log files using **tail, head, less, and journalctl**.
 
-1. Monitor Running Processes:
+### 1. Monitor Running Processes:
 Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
+
 **Example:**
+
 - **1.1) View running processes related to Jenkins:**
   ```bash
   ps aux | grep jenkins
@@ -53,7 +55,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   **pidstat-docker-example:**
    ![pidstat-docker-example](./images/pidstat-docker.png)
 
-## Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
+### 3) Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
 
 - **3.1) vmstat (Virtual Memory Statistics):**
     - Purpose: Displays a snapshot of system performance, including CPU, memory, and I/O usage. Ideal for identifying bottlenecks.
