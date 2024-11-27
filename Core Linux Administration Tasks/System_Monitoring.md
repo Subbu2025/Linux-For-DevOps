@@ -108,7 +108,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
  - **xkill:** Graphically kill a window on desktop environments.
 
 - **2.2) nice ,renice:**
-  ### Purpose: Nice and renice are commands used to modify the priority of a process, influencing the amount of CPU time it receives in relation to other processes.
+  - **Purpose:** Nice and renice are commands used to modify the priority of a process, influencing the amount of CPU time it receives in relation to other processes.
 - **2.2.1) nice:**
     Used to start a new process with a specified niceness value (priority level).
   ```bash
@@ -138,6 +138,75 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   renice 5 -p 1234
   ```
   - It changes the priority of the process with PID 1234 to 5
+ 
+- **2.3) systemctl:**
+  - **Purpose:** The systemctl command is utilized for managing systemd services, which are responsible for starting, stopping, and overseeing various services                    and processes.
+  - **Syntax:**
+    
+  ```bash
+  systemctl [OPTIONS] COMMAND [SERVICE_NAME]
+  ```
+  
+  - OPTIONS: Additional flags for controlling how the command runs (e.g., --quiet or --no-block).
+  - COMMAND: The action to perform on the service (e.g., start, stop, restart, etc.).
+  - SERVICE_NAME: The name of the service or unit to manage (e.g., docker, jenkins, kubelet).
+
+ **Examples:**
+
+  1. Start a Service:
+ ```bash
+  sudo systemctl start docker
+  ```
+# Systemctl Command Examples
+
+## Start a Service
+To start a service using the `systemctl` command:
+```bash
+sudo systemctl start docker
+
+## Stop a Service
+To stop a service using the systemctl command:
+sudo systemctl stop docker
+
+## Restart a Service
+To restart a service using the systemctl command:
+sudo systemctl restart docker
+sudo systemctl restart jenkins
+
+## Check the Status of a Service
+To check the status of a service:
+systemctl status docker
+systemctl status kubelet
+
+## Enable a Service to Start at Boot
+To enable a service to start automatically at boot:
+sudo systemctl enable docker
+sudo systemctl enable jenkins
+
+## Disable a Service from Starting at Boot
+To prevent a service from starting automatically at boot:
+sudo systemctl disable docker
+
+## Reload Configuration Without Restarting
+To reload the configuration of a service without restarting it:
+
+sudo systemctl reload nginx
+sudo systemctl reload apache2
+
+## View All Running Services
+To view all running services on the system:
+systemctl list-units --type=service
+systemctl list-units --state=running
+
+## Additional Examples
+List Services by Specific States
+systemctl list-units --type=service --state=failed
+systemctl list-units --type=service --state=inactive
+
+##Check System Logs for a Service
+journalctl -u docker.service
+journalctl -u nginx.service
+---
  
 ### 3) Check system performance metrics such as CPU, memory, and disk I/O using vmstat, iostat, sar and free.
 
