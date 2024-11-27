@@ -33,7 +33,13 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   htop
   ```
   - Navigate the process list using arrow keys.
-  - Search for Jenkins or Docker processes by pressing / and typing "jenkins" or "docker".
+  - Search for Jenkins or Docker processes by pressing / and typing "jenkins", "sshd" or "docker".
+
+  ![htop-example](./images/htop.png)
+
+  **Ex: Serch for sshd service:**
+  
+  ![htop-search-sshd-example](./images/htop-search-sshd.png)
 
 - **1.4) Check detailed stats of a specific process: pidstat**
   ```bash
@@ -298,9 +304,9 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
   
   **Syntax:**
   
-     ```bash
+    ```bash
         free [options]
-     ```
+    ```
     
   - **Common Options:**
     - -b: Display memory in bytes.
