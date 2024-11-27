@@ -326,14 +326,12 @@ journalctl -u nginx.service
 
    **Step 1: Install Sysstat**
   
-       i) Install the package:
-  
+  i) Install the package:
   
     ```bash
     sudo yum install sysstat -y
     ```
-    
-       ii) Verify the installation:
+  ii) Verify the installation:
   
     ```bash
     sar -V
