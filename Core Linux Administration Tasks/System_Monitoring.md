@@ -299,7 +299,7 @@ Tools like ps, top, htop, and pidstat help you inspect and monitor processes.
     ![sar-f-example](./images/sar-f.png)
   
 
-- **3.4) sar free:**
+- **3.4) free:**
   #### The free command in Linux displays information regarding the system's memory usage. It offers details about the total amount of free and used physical memory, swap memory, and the memory buffers utilized by the kernel.
   
   **Syntax:**
