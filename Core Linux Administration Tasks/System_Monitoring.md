@@ -558,16 +558,19 @@ journalctl -u nginx.service
       head [options] <file>
   ```
   
-    **Use Case in DevOps:**
+  **Use Case in DevOps:**
+  
     
-    Example-1: To find the top 10 largest files:
+  Example-1: To find the top 10 largest files:
+  
     
     
   ```bash
       sudo find / -type f -exec du -h {} + 2>/dev/null | sort -rh | head
   ```
     
-    Example-2: To find the top 5 largest files:
+  Example-2: To find the top 5 largest files:
+  
     
   ```bash
       sudo find / -type f -exec du -h {} + 2>/dev/null | sort -rh | head -n 5
