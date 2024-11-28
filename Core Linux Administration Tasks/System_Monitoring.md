@@ -552,8 +552,7 @@ journalctl -u nginx.service
   
   #### The head command is used to display the beginning of a file, often for a quick overview.
     
-    - **Syntax:**
-    
+  **Syntax:**
     
     ```bash
       head [options] <file>
