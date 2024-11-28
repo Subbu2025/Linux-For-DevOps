@@ -618,6 +618,7 @@ journalctl -u nginx.service
       - -f: Follow the logs in real-time (similar to tail -f).
       - --since "time": Show logs from a specific time.
       - --no-pager: Disable paging to view all logs at once.
+        
     **Scenario:** Debug a server crash by reviewing kernel logs.
 
   ```bash
@@ -633,7 +634,7 @@ journalctl -u nginx.service
  ![journalctl-2-example](./images/journalctl-2.jpg)
  
 
- **Scenario 3:** Reviewing Logs After an Incident
+ **Scenario:** Reviewing Logs After an Incident
  ```bash
      journalctl --since "2024-11-27 08:00:00" --until "2024-11-28 09:00:00"
   ```
