@@ -524,7 +524,9 @@ journalctl -u nginx.service
     ```
     - Options:
       -n <number>: Show the last <number> lines.
+      
       -f: Follow the file for real-time updates as new lines are added (useful for logs).
+      
     **Use Case in DevOps:**
       Example:
       The health-checker.log may contain useful information about the Jenkins service health. 
