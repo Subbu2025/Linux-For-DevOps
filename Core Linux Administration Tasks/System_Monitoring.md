@@ -589,12 +589,54 @@ journalctl -u nginx.service
   
     
   ### **4.3) less:**
+  #### The less command is used to view a file page by page. It allows you to scroll through logs efficiently without loading the entire file into memory.
+  
+  ```bash
+     less example.txt 
+  ```
+  - **Common Navigation Keys:**
+    - Space: Scroll down one page.
+    - b: Scroll up one page.
+    - /search_term: Search for a specific term.
+    - n: Move to the next match for the search term.
+    - q: Quit.
 
-
-
+   **Use Case in DevOps:**
+   
+   1. Scenario: Investigate an issue by searching for specific error messages in logs.
+   2. Scenario: Analyze large log files without affecting system performance.
+      
 
   ### **4.4) journalctl:**
+  #### The journalctl command is used to view logs managed by the systemd journal, which captures system logs, service logs, and kernel logs.
+  - **Syntax:**
+  ```bash
+     journalctl [options] 
+  ```
+  - **Options:**
+      - -u <service>: Show logs for a specific service.
+      - -f: Follow the logs in real-time (similar to tail -f).
+      - --since "time": Show logs from a specific time.
+      - --no-pager: Disable paging to view all logs at once.
+    **Scenario:** Debug a server crash by reviewing kernel logs.
+
+  ```bash
+     journalctl -k
+  ```
+  ![journalctl-1-example](./images/journalctl-1.jpg)
 
 
+  **Scenario:** retrieve logs specifically related to the Docker service managed by systemd. 
+  ```bash
+     journalctl -u docker.service
+  ```
+ ![journalctl-2-example](./images/journalctl-2.jpg)
+ 
+
+ **Scenario 3:** Reviewing Logs After an Incident
+ ```bash
+     journalctl --since "2024-11-27 08:00:00" --until "2024-11-28 09:00:00"
+  ```
+ 
 
 
