@@ -550,8 +550,7 @@ journalctl -u nginx.service
 
   ### **4.2) head:**
   
-  
-    #### The head command is used to display the beginning of a file, often for a quick overview.
+  #### The head command is used to display the beginning of a file, often for a quick overview.
     
     - **Syntax:**
     
