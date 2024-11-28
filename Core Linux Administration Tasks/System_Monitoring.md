@@ -578,7 +578,15 @@ journalctl -u nginx.service
     
    ![head-example](./images/head.jpg)
     
+  **Note:** In the above example we used 2>/dev/null to suppress the standard errors. You can check the following the image where we are do not use 2>/dev/null:
 
+  ```bash
+      sudo find / -type f -exec du -h {} + | sort -rh | head
+  ```
+  ![head-1-example](./images/head-1.jpg)
+
+  ![file descriptors-example](./images/file-descriptors.jpg)
+  
     
   ### **4.3) less:**
 
