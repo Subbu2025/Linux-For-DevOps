@@ -583,7 +583,7 @@ journalctl -u nginx.service
   ```bash
       sudo find / -type f -exec du -h {} + | sort -rh | head
   ```
-  ![head-1-example](./images/head-1.jpg)
+  ![head-2-example](./images/head-2.jpg)
 
   ![file descriptors-example](./images/file-descriptors.jpg)
   
