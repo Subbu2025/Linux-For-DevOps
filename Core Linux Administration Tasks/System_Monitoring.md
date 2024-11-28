@@ -516,7 +516,24 @@ journalctl -u nginx.service
 
 ## 4. Monitor log files using tail, head, less, and journalctl.
   ### **4.1) tail:**
+  #### The tail command is used to view the end of a file in real-time or display a specific number of lines.
 
+  - **Syntax:**
+    ```bash
+      tail [options] <file>
+    ```
+    - Options:
+      -n <number>: Show the last <number> lines.
+      -f: Follow the file for real-time updates as new lines are added (useful for logs).
+    **Use Case in DevOps:**
+      Example:
+      The health-checker.log may contain useful information about the Jenkins service health. 
+    ```bash
+      tail -f /var/lib/jenkins/logs/health-checker.log
+    ```
+    ![tail-jenkins-ex-example](./images/tail-jenkins.png)
+
+  
 
 
 
