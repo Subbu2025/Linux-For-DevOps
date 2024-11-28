@@ -523,20 +523,27 @@ journalctl -u nginx.service
       tail [options] <file>
     ```
     - Options:
+      
       -n <number>: Show the last <number> lines.
       
       -f: Follow the file for real-time updates as new lines are added (useful for logs).
       
     **Use Case in DevOps:**
       Example:
-      The health-checker.log may contain useful information about the Jenkins service health. 
+      1. The health-checker.log may contain useful information about the Jenkins service health. 
     ```bash
       tail -f /var/lib/jenkins/logs/health-checker.log
     ```
     
     ![tail-jenkins-example](./images/tail-jenkins.jpg)
+    
 
-  
+     2. To get last the last 5 lines of specified file:
+    ```bash
+      cat -n list_txt_files.sh | tail -n 5
+    ```
+    ![tail-lines-example](./images/tail-lines.jpg)
+    
 
 
 
