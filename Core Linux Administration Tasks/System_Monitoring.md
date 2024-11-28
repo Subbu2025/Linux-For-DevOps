@@ -532,7 +532,7 @@ journalctl -u nginx.service
       tail -f /var/lib/jenkins/logs/health-checker.log
     ```
     
-    ![tail-jenkins-example](./images/tail-jenkins.png)
+    ![tail-jenkins-example](./images/tail-jenkins.jpg)
 
   
 
