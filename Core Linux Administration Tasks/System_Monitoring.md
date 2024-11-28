@@ -549,15 +549,21 @@ journalctl -u nginx.service
 
 
   ### **4.2) head:**
+  
+  
     #### The head command is used to display the beginning of a file, often for a quick overview.
+    
     - **Syntax:**
+    
     
     ```bash
       head [options] <file>
     ```
   
     **Use Case in DevOps:**
+    
     Example-1: To find the top 10 largest files:
+    
     
     ```bash
       sudo find / -type f -exec du -h {} + 2>/dev/null | sort -rh | head
@@ -568,6 +574,7 @@ journalctl -u nginx.service
     ```bash
       sudo find / -type f -exec du -h {} + 2>/dev/null | sort -rh | head -n 5
     ```
+    
    ![head-example](./images/head.jpg)
     
 
